@@ -1,5 +1,5 @@
 build:
-	cd contracts;sozo build
+	cd contracts; sozo build
 
 test:
 	cd contracts; sozo test
@@ -47,5 +47,3 @@ loop_tick:
 	while true; do sleep .2 &\
 	sozo execute Update -c 0 --world $$WORLD_ADDR;\
 	wait; done;
-
-
