@@ -4,8 +4,8 @@ mod spawn {
     use traits::Into;
     use dojo::world::Context;
 
-    use dojo_examples::components::Position;
-    use dojo_examples::components::Moves;
+    use alamat::components::Position;
+    use alamat::components::Moves;
 
     fn execute(ctx: Context) {
         set !(
@@ -23,8 +23,8 @@ mod move {
     use traits::Into;
     use dojo::world::Context;
 
-    use dojo_examples::components::Position;
-    use dojo_examples::components::Moves;
+    use alamat::components::Position;
+    use alamat::components::Moves;
 
     #[derive(Serde, Drop)]
     enum Direction {
@@ -83,12 +83,12 @@ mod tests {
 
     use dojo::test_utils::spawn_test_world;
 
-    use dojo_examples::components::position;
-    use dojo_examples::components::Position;
-    use dojo_examples::components::moves;
-    use dojo_examples::components::Moves;
-    use dojo_examples::systems::spawn;
-    use dojo_examples::systems::move;
+    use alamat::components::position;
+    use alamat::components::Position;
+    use alamat::components::moves;
+    use alamat::components::Moves;
+    use alamat::systems::spawn;
+    use alamat::systems::move;
 
     #[test]
     #[available_gas(30000000)]
